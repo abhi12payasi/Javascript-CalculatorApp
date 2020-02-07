@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="root">
+    <!--Start Button Module-->
+        <script src="js/button/model.js"></script>
+        <script src="js/button/view.js"></script>
+        <script src="js/button/controller.js"></script>
+    <!--End Button Module-->
+
+    <!--Start Numeric Button Module-->
+        <script src="js/numeric-button/model.js"></script>
+        <script src="js/numeric-button/view.js"></script>
+        <script src="js/numeric-button/controller.js"></script>
+    <!--End Numeric Button Module-->
+
+    <!--Start Operator Button Module-->
+        <script src="js/operator-button/model.js"></script>
+        <script src="js/operator-button/view.js"></script>
+        <script src="js/operator-button/controller.js"></script>
+    <!--End Operator Button Module-->
+
+    <!--Start Display Module-->
+        <script src="js/display/model.js"></script>
+        <script src="js/display/view.js"></script>
+        <script src="js/display/controller.js"></script>
+    <!--End Display Module-->
+
+    <!--Start Calculator-->
+        <script src="js/calculator/model.js"></script>
+        <script src="js/calculator/view.js"></script>
+        <script src="js/calculator/controller.js"></script>
+    <!--End Calculator-->
+
+    <script>
+        var cal = [];
+        var instances = 1;
+        instances = prompt("Enter required no of Instances of Calculator ? ");
+        var options = {
+            width : '40px' ,
+            height : '40px' ,
+            color : 'grey' ,
+            className : 'btn'
+        }
+        for(var i=1;i<=instances;i++){
+            cal[i] = new CalculatorController(i,options);
+        }
+    </script>
+</body>
+</html>

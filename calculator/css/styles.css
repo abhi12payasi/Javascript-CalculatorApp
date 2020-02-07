@@ -1,0 +1,67 @@
+* {
+    /* margin:1px; */
+    color : white;
+}
+.cal{
+    width: 314px; /*320*/
+    height: 374px; /*507px*/
+    border-radius : 1px;
+    background-color: #555555;
+    margin-left: 450px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn{
+   position : relative;
+   cursor: pointer;
+   width : 75px;
+   height : 49px;
+   font-size : 25px;
+   margin : 1px;
+   color : white;
+   border-width:0px;
+   border-radius : 1px;
+   text-decoration : none;
+}
+.numbtn{
+    background-color : #131313;
+}
+.numbtn:hover{
+    background-color : #343434;
+}
+.opbtn{
+    background-color : #343434;
+}
+.opbtn:hover{
+    background-color : rgba(0,0,245,0.5);
+}
+
+.display{
+    position: relative;
+    width: 308px;
+    width : 310px ;
+   /* height : 80px ; */
+   text-align : right;
+    font-size : 50px ;
+    font-weight: bold ;
+    color: white;
+    background-color: #555555;
+    text-shadow: 0 0 0 black;
+    border-width:0px;
+    border:none;
+    overflow : hidden;
+}
+.numBtnContainer{
+    position: relative;
+    width: 232px;
+    margin-left : 2px;
+    float:left;
+    z-index : 999;
+}
+.opBtnContainer{
+    position: relative;
+    margin-left : 2px;
+}
+
+
